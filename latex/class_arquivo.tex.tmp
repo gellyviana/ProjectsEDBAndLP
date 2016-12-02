@@ -1,0 +1,117 @@
+\hypertarget{class_arquivo}{}\section{Arquivo Class Reference}
+\label{class_arquivo}\index{Arquivo@{Arquivo}}
+
+
+{\ttfamily \#include $<$Arquivo.\+h$>$}
+
+
+
+Inheritance diagram for Arquivo\+:
+% FIG 0
+
+
+Collaboration diagram for Arquivo\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Arquivo} (int id\+Arquivo)\hypertarget{class_arquivo_a30f377a9647fa763f04be04bcc5e0086}{}\label{class_arquivo_a30f377a9647fa763f04be04bcc5e0086}
+
+\item 
+int \hyperlink{class_arquivo_a107a78fe3b4a9c45c19de6f8b8f3ecf0}{Get\+Id\+Arquivo} ()
+\item 
+\hyperlink{class_linked_list}{Linked\+List}$<$ \hyperlink{class_linha}{Linha} $>$ $\ast$ \hyperlink{class_arquivo_ac49d5fa47188494fe6407e0fc261356b}{Get\+Linhas} ()
+\item 
+virtual string \hyperlink{class_arquivo_a223ef422c34426600e6bafbc6228a955}{Serialize} ()
+\item 
+virtual void \hyperlink{class_arquivo_a9cbeee9a9a7b27b4c6f7cc649cb871dc}{Deserialize} (string dados)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries caminho}\hypertarget{class_arquivo_abf2575e2d3d7693453c30d2d202264ea}{}\label{class_arquivo_abf2575e2d3d7693453c30d2d202264ea}
+
+\item 
+string {\bfseries nome}\hypertarget{class_arquivo_a6824c17444ba57b46827848413d37f2c}{}\label{class_arquivo_a6824c17444ba57b46827848413d37f2c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que herda de \hyperlink{class_serializable}{Serializable} e trabalha especificamente com os arquivos. 
+
+\subsection{Member Function Documentation}
+\index{Arquivo@{Arquivo}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!Arquivo@{Arquivo}}
+\subsubsection[{\texorpdfstring{Deserialize(string dados)}{Deserialize(string dados)}}]{\setlength{\rightskip}{0pt plus 5cm}void Arquivo\+::\+Deserialize (
+\begin{DoxyParamCaption}
+\item[{string}]{texto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_arquivo_a9cbeee9a9a7b27b4c6f7cc649cb871dc}{}\label{class_arquivo_a9cbeee9a9a7b27b4c6f7cc649cb871dc}
+Método que retira um delimitador especifico. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String que contém o texto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Não possui retorno. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_serializable}{Serializable}.
+
+\index{Arquivo@{Arquivo}!Get\+Id\+Arquivo@{Get\+Id\+Arquivo}}
+\index{Get\+Id\+Arquivo@{Get\+Id\+Arquivo}!Arquivo@{Arquivo}}
+\subsubsection[{\texorpdfstring{Get\+Id\+Arquivo()}{GetIdArquivo()}}]{\setlength{\rightskip}{0pt plus 5cm}int Arquivo\+::\+Get\+Id\+Arquivo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_arquivo_a107a78fe3b4a9c45c19de6f8b8f3ecf0}{}\label{class_arquivo_a107a78fe3b4a9c45c19de6f8b8f3ecf0}
+Método que retorna um inteiro diretamente ligado ao arquivo que esta sendo trabalhado. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não passui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorno o número que representa o arquivo. 
+\end{DoxyReturn}
+\index{Arquivo@{Arquivo}!Get\+Linhas@{Get\+Linhas}}
+\index{Get\+Linhas@{Get\+Linhas}!Arquivo@{Arquivo}}
+\subsubsection[{\texorpdfstring{Get\+Linhas()}{GetLinhas()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Linked\+List}$<$ {\bf Linha} $>$ $\ast$ Arquivo\+::\+Get\+Linhas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_arquivo_ac49d5fa47188494fe6407e0fc261356b}{}\label{class_arquivo_ac49d5fa47188494fe6407e0fc261356b}
+Método pega as linhas dos arquivos. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna o endereço para uma lista duplamente encadeada contendo as linhas. 
+\end{DoxyReturn}
+\index{Arquivo@{Arquivo}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!Arquivo@{Arquivo}}
+\subsubsection[{\texorpdfstring{Serialize()}{Serialize()}}]{\setlength{\rightskip}{0pt plus 5cm}string Arquivo\+::\+Serialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_arquivo_a223ef422c34426600e6bafbc6228a955}{}\label{class_arquivo_a223ef422c34426600e6bafbc6228a955}
+Método que coloca um papiline entre o nome do arquivo e o seu caminho. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna uma string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_serializable}{Serializable}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dependencies/\+Headers/Arquivo.\+h\item 
+Dependencies/\+Models/Arquivo.\+cpp\end{DoxyCompactItemize}

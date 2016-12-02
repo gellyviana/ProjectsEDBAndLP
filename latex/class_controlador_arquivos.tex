@@ -1,0 +1,140 @@
+\hypertarget{class_controlador_arquivos}{}\section{Controlador\+Arquivos Class Reference}
+\label{class_controlador_arquivos}\index{Controlador\+Arquivos@{Controlador\+Arquivos}}
+
+
+{\ttfamily \#include $<$Controlador\+Arquivos.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controlador_arquivos_a668b096f9467d8464ae9e38595976883}{Controlador\+Arquivos} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_controlador_arquivos_a18d1b21310b0e72d241623d3d81d0165}{Garantir\+Base\+De\+Dados} ()
+\item 
+static \hyperlink{class_linked_list}{Linked\+List}$<$ string $>$ \hyperlink{class_controlador_arquivos_a965507d91d5a7b0622c6d5c97ae1ce7e}{Ler\+Arquivo\+T\+XT} (string nome\+Arquivo)
+\item 
+static \hyperlink{class_linked_list}{Linked\+List}$<$ \hyperlink{class_arquivo}{Arquivo} $>$ \hyperlink{class_controlador_arquivos_a04ad61d5ca3f38cacc90d282f441384b}{Ler\+Arquivo} (string nome\+Arquivo)
+\item 
+static string \hyperlink{class_controlador_arquivos_a3946ae4d7ac2caef9bec2d7ba498ec34}{Ler\+Linha} (string nome\+Arquivo, unsigned int index\+Linha)
+\item 
+static bool \hyperlink{class_controlador_arquivos_ac4120123f997d42eaa075da393ca6e02}{Inserir\+Arquivo} (string caminho\+Arquivo)
+\item 
+static bool \hyperlink{class_controlador_arquivos_ac42745df8ad573381dadf68027970e6b}{Remover\+Arquivo} (string caminho\+Arquivo)
+\item 
+static void \hyperlink{class_controlador_arquivos_ad282054256f449019ae353f834eb44e0}{Processar\+Arquivos} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável em tratar os arquivos usados, transformando na base de busca e depois para as buscas. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Controlador\+Arquivos@{Controlador\+Arquivos}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\index{Controlador\+Arquivos@{Controlador\+Arquivos}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\subsubsection[{\texorpdfstring{Controlador\+Arquivos()}{ControladorArquivos()}}]{\setlength{\rightskip}{0pt plus 5cm}Controlador\+Arquivos\+::\+Controlador\+Arquivos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_controlador_arquivos_a668b096f9467d8464ae9e38595976883}{}\label{class_controlador_arquivos_a668b096f9467d8464ae9e38595976883}
+Construtor da classe 
+
+\subsection{Member Function Documentation}
+\index{Controlador\+Arquivos@{Controlador\+Arquivos}!Garantir\+Base\+De\+Dados@{Garantir\+Base\+De\+Dados}}
+\index{Garantir\+Base\+De\+Dados@{Garantir\+Base\+De\+Dados}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\subsubsection[{\texorpdfstring{Garantir\+Base\+De\+Dados()}{GarantirBaseDeDados()}}]{\setlength{\rightskip}{0pt plus 5cm}void Controlador\+Arquivos\+::\+Garantir\+Base\+De\+Dados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_controlador_arquivos_a18d1b21310b0e72d241623d3d81d0165}{}\label{class_controlador_arquivos_a18d1b21310b0e72d241623d3d81d0165}
+Método responsável em criar a pasta que irá conter os arquivos inseridos. \index{Controlador\+Arquivos@{Controlador\+Arquivos}!Inserir\+Arquivo@{Inserir\+Arquivo}}
+\index{Inserir\+Arquivo@{Inserir\+Arquivo}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\subsubsection[{\texorpdfstring{Inserir\+Arquivo(string caminho\+Arquivo)}{InserirArquivo(string caminhoArquivo)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Controlador\+Arquivos\+::\+Inserir\+Arquivo (
+\begin{DoxyParamCaption}
+\item[{string}]{caminho\+Arquivo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_controlador_arquivos_ac4120123f997d42eaa075da393ca6e02}{}\label{class_controlador_arquivos_ac4120123f997d42eaa075da393ca6e02}
+Método que inseri um arquivo. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Nome da pasta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ retorna verdadeiro quando consegui inserir o arquivo ou falso quando ja foi inserido ou não existe a pasta. 
+\end{DoxyReturn}
+\index{Controlador\+Arquivos@{Controlador\+Arquivos}!Ler\+Arquivo@{Ler\+Arquivo}}
+\index{Ler\+Arquivo@{Ler\+Arquivo}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\subsubsection[{\texorpdfstring{Ler\+Arquivo(string nome\+Arquivo)}{LerArquivo(string nomeArquivo)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Linked\+List}$<$ {\bf Arquivo} $>$ Controlador\+Arquivos\+::\+Ler\+Arquivo (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\+Arquivo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_controlador_arquivos_a04ad61d5ca3f38cacc90d282f441384b}{}\label{class_controlador_arquivos_a04ad61d5ca3f38cacc90d282f441384b}
+Método que abre um arquivo para leitura e retorna uma lista com especificaçoes do arquivo. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String que contem o nome do arquivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna o endereço do inicio da lista duplamente encadeada. 
+\end{DoxyReturn}
+\index{Controlador\+Arquivos@{Controlador\+Arquivos}!Ler\+Arquivo\+T\+XT@{Ler\+Arquivo\+T\+XT}}
+\index{Ler\+Arquivo\+T\+XT@{Ler\+Arquivo\+T\+XT}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\subsubsection[{\texorpdfstring{Ler\+Arquivo\+T\+X\+T(string nome\+Arquivo)}{LerArquivoTXT(string nomeArquivo)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Linked\+List}$<$ string $>$ Controlador\+Arquivos\+::\+Ler\+Arquivo\+T\+XT (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\+Arquivo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_controlador_arquivos_a965507d91d5a7b0622c6d5c97ae1ce7e}{}\label{class_controlador_arquivos_a965507d91d5a7b0622c6d5c97ae1ce7e}
+Método que abre um arquivo T\+XT e lê linha por linha e inseri numa lista duplamente encadeada. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Nome do arquivo do string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna o endereço contendo o inicio de uma lista duplamente encadeada. 
+\end{DoxyReturn}
+\index{Controlador\+Arquivos@{Controlador\+Arquivos}!Ler\+Linha@{Ler\+Linha}}
+\index{Ler\+Linha@{Ler\+Linha}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\subsubsection[{\texorpdfstring{Ler\+Linha(string nome\+Arquivo, unsigned int index\+Linha)}{LerLinha(string nomeArquivo, unsigned int indexLinha)}}]{\setlength{\rightskip}{0pt plus 5cm}string Controlador\+Arquivos\+::\+Ler\+Linha (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\+Arquivo, }
+\item[{unsigned int}]{index\+Linha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_controlador_arquivos_a3946ae4d7ac2caef9bec2d7ba498ec34}{}\label{class_controlador_arquivos_a3946ae4d7ac2caef9bec2d7ba498ec34}
+Retorna a linha do arquivo que esta numa linha especifica do arquivo. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String com o nome do arquivo e inteiro com numero da linha a ser trabalhada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um string contendo a frase desejada. 
+\end{DoxyReturn}
+\index{Controlador\+Arquivos@{Controlador\+Arquivos}!Processar\+Arquivos@{Processar\+Arquivos}}
+\index{Processar\+Arquivos@{Processar\+Arquivos}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\subsubsection[{\texorpdfstring{Processar\+Arquivos()}{ProcessarArquivos()}}]{\setlength{\rightskip}{0pt plus 5cm}void Controlador\+Arquivos\+::\+Processar\+Arquivos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_controlador_arquivos_ad282054256f449019ae353f834eb44e0}{}\label{class_controlador_arquivos_ad282054256f449019ae353f834eb44e0}
+Método responsável em usar a base de dados para trabalhar com a tabela Hash. \index{Controlador\+Arquivos@{Controlador\+Arquivos}!Remover\+Arquivo@{Remover\+Arquivo}}
+\index{Remover\+Arquivo@{Remover\+Arquivo}!Controlador\+Arquivos@{Controlador\+Arquivos}}
+\subsubsection[{\texorpdfstring{Remover\+Arquivo(string caminho\+Arquivo)}{RemoverArquivo(string caminhoArquivo)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Controlador\+Arquivos\+::\+Remover\+Arquivo (
+\begin{DoxyParamCaption}
+\item[{string}]{caminho\+Arquivo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_controlador_arquivos_ac42745df8ad573381dadf68027970e6b}{}\label{class_controlador_arquivos_ac42745df8ad573381dadf68027970e6b}
+Método responsavel em remover um arquivo especifico. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String que contem o caminho do arquivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna verdadeiro se conseguir remover o arquivo, caso contrario retorna falso. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dependencies/\+Headers/Controlador\+Arquivos.\+h\item 
+Dependencies/Controlador\+Arquivos.\+cpp\end{DoxyCompactItemize}

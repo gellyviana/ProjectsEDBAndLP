@@ -1,0 +1,106 @@
+\hypertarget{class_palavra}{}\section{Palavra Class Reference}
+\label{class_palavra}\index{Palavra@{Palavra}}
+
+
+{\ttfamily \#include $<$Palavra.\+h$>$}
+
+
+
+Inheritance diagram for Palavra\+:
+% FIG 0
+
+
+Collaboration diagram for Palavra\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Palavra} (int id\+Linha, int id\+Arquivo)\hypertarget{class_palavra_a7627de0f039cf0738dcaa7d138037b7f}{}\label{class_palavra_a7627de0f039cf0738dcaa7d138037b7f}
+
+\item 
+string \hyperlink{class_palavra_a63c622775e858a590e075b4daef0e47c}{Get\+Texto} ()
+\item 
+void \hyperlink{class_palavra_a552d7d9a0e8a8572587b00e1c007678a}{Set\+Texto} (string value)
+\item 
+int \hyperlink{class_palavra_acc2f956345fd5e37fc711f52dde1a8b2}{Get\+Id\+Linha} ()
+\item 
+int \hyperlink{class_palavra_a66e47eec1ccfa63d674f4e7162dd5a86}{Get\+Id\+Arquivo} ()
+\item 
+virtual string {\bfseries Serialize} ()\hypertarget{class_palavra_a6b3e77696c92dee39014caccc8aad130}{}\label{class_palavra_a6b3e77696c92dee39014caccc8aad130}
+
+\item 
+virtual void {\bfseries Deserialize} (string dados)\hypertarget{class_palavra_a0efa0dd0860ef7b1d318f52060b125ec}{}\label{class_palavra_a0efa0dd0860ef7b1d318f52060b125ec}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsável em trabalhar com a palavra e herda da classe \hyperlink{class_serializable}{Serializable}. 
+
+\subsection{Member Function Documentation}
+\index{Palavra@{Palavra}!Get\+Id\+Arquivo@{Get\+Id\+Arquivo}}
+\index{Get\+Id\+Arquivo@{Get\+Id\+Arquivo}!Palavra@{Palavra}}
+\subsubsection[{\texorpdfstring{Get\+Id\+Arquivo()}{GetIdArquivo()}}]{\setlength{\rightskip}{0pt plus 5cm}int Palavra\+::\+Get\+Id\+Arquivo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_palavra_a66e47eec1ccfa63d674f4e7162dd5a86}{}\label{class_palavra_a66e47eec1ccfa63d674f4e7162dd5a86}
+Método que retorna uma identidade unica para cada arquivo. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um inteiro. 
+\end{DoxyReturn}
+\index{Palavra@{Palavra}!Get\+Id\+Linha@{Get\+Id\+Linha}}
+\index{Get\+Id\+Linha@{Get\+Id\+Linha}!Palavra@{Palavra}}
+\subsubsection[{\texorpdfstring{Get\+Id\+Linha()}{GetIdLinha()}}]{\setlength{\rightskip}{0pt plus 5cm}int Palavra\+::\+Get\+Id\+Linha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_palavra_acc2f956345fd5e37fc711f52dde1a8b2}{}\label{class_palavra_acc2f956345fd5e37fc711f52dde1a8b2}
+Método que retorna uma identidade unica para cada linha. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um inteiro. 
+\end{DoxyReturn}
+\index{Palavra@{Palavra}!Get\+Texto@{Get\+Texto}}
+\index{Get\+Texto@{Get\+Texto}!Palavra@{Palavra}}
+\subsubsection[{\texorpdfstring{Get\+Texto()}{GetTexto()}}]{\setlength{\rightskip}{0pt plus 5cm}string Palavra\+::\+Get\+Texto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_palavra_a63c622775e858a590e075b4daef0e47c}{}\label{class_palavra_a63c622775e858a590e075b4daef0e47c}
+Método que retorna uma string. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna uma string. 
+\end{DoxyReturn}
+\index{Palavra@{Palavra}!Set\+Texto@{Set\+Texto}}
+\index{Set\+Texto@{Set\+Texto}!Palavra@{Palavra}}
+\subsubsection[{\texorpdfstring{Set\+Texto(string value)}{SetTexto(string value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Palavra\+::\+Set\+Texto (
+\begin{DoxyParamCaption}
+\item[{string}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_palavra_a552d7d9a0e8a8572587b00e1c007678a}{}\label{class_palavra_a552d7d9a0e8a8572587b00e1c007678a}
+Método que pega uma string. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Uma string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Não possui retorno. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dependencies/\+Headers/Palavra.\+h\item 
+Dependencies/\+Models/Palavra.\+cpp\end{DoxyCompactItemize}

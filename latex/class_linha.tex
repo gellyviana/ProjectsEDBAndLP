@@ -1,0 +1,89 @@
+\hypertarget{class_linha}{}\section{Linha Class Reference}
+\label{class_linha}\index{Linha@{Linha}}
+
+
+{\ttfamily \#include $<$Linha.\+h$>$}
+
+
+
+Inheritance diagram for Linha\+:
+% FIG 0
+
+
+Collaboration diagram for Linha\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Linha} (int id\+Linha, int id\+Arquivo)\hypertarget{class_linha_aec494ca6d3050a520e5aacaeb2fa994e}{}\label{class_linha_aec494ca6d3050a520e5aacaeb2fa994e}
+
+\item 
+int \hyperlink{class_linha_a82f86629d3057e805506be0740eef6f2}{Get\+Id\+Linha} ()
+\item 
+int \hyperlink{class_linha_a63b2a60b1df0ab5cac09f0c5dd373edf}{Get\+Id\+Arquivo} ()
+\item 
+\hyperlink{class_linked_list}{Linked\+List}$<$ \hyperlink{class_palavra}{Palavra} $>$ $\ast$ \hyperlink{class_linha_a62548d6970f6e2b075f9548e9047c1f3}{Get\+Palavras} ()
+\item 
+virtual string {\bfseries Serialize} ()\hypertarget{class_linha_a3a9a6f6f2384023546f98ff8050a5941}{}\label{class_linha_a3a9a6f6f2384023546f98ff8050a5941}
+
+\item 
+virtual void {\bfseries Deserialize} (string dados)\hypertarget{class_linha_a61ff79a4765d2ee03a8a07e0f2418537}{}\label{class_linha_a61ff79a4765d2ee03a8a07e0f2418537}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que herda de \hyperlink{class_serializable}{Serializable} e responsável em trabalhar com arquivo e transformando nas linhas. 
+
+\subsection{Member Function Documentation}
+\index{Linha@{Linha}!Get\+Id\+Arquivo@{Get\+Id\+Arquivo}}
+\index{Get\+Id\+Arquivo@{Get\+Id\+Arquivo}!Linha@{Linha}}
+\subsubsection[{\texorpdfstring{Get\+Id\+Arquivo()}{GetIdArquivo()}}]{\setlength{\rightskip}{0pt plus 5cm}int Linha\+::\+Get\+Id\+Arquivo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_linha_a63b2a60b1df0ab5cac09f0c5dd373edf}{}\label{class_linha_a63b2a60b1df0ab5cac09f0c5dd373edf}
+Método que retorna uma identidade unica para cada arquivo. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um inteiro. 
+\end{DoxyReturn}
+\index{Linha@{Linha}!Get\+Id\+Linha@{Get\+Id\+Linha}}
+\index{Get\+Id\+Linha@{Get\+Id\+Linha}!Linha@{Linha}}
+\subsubsection[{\texorpdfstring{Get\+Id\+Linha()}{GetIdLinha()}}]{\setlength{\rightskip}{0pt plus 5cm}int Linha\+::\+Get\+Id\+Linha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_linha_a82f86629d3057e805506be0740eef6f2}{}\label{class_linha_a82f86629d3057e805506be0740eef6f2}
+Método que retorna uma identidade unica de cada \hyperlink{class_linha}{Linha}. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um inteiro. 
+\end{DoxyReturn}
+\index{Linha@{Linha}!Get\+Palavras@{Get\+Palavras}}
+\index{Get\+Palavras@{Get\+Palavras}!Linha@{Linha}}
+\subsubsection[{\texorpdfstring{Get\+Palavras()}{GetPalavras()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Linked\+List}$<$ {\bf Palavra} $>$ $\ast$ Linha\+::\+Get\+Palavras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_linha_a62548d6970f6e2b075f9548e9047c1f3}{}\label{class_linha_a62548d6970f6e2b075f9548e9047c1f3}
+Método que retorna a palavra, passando para um lista. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um ponteiro para uma lista. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dependencies/\+Headers/Linha.\+h\item 
+Dependencies/\+Models/Linha.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,255 @@
+\hypertarget{class_hash_table}{}\section{Hash\+Table$<$ T $>$ Class Template Reference}
+\label{class_hash_table}\index{Hash\+Table$<$ T $>$@{Hash\+Table$<$ T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Hash\+Table} (int tam\+Inicial)\hypertarget{class_hash_table_a0078c8d8bfd666016471af6bf61729f6}{}\label{class_hash_table_a0078c8d8bfd666016471af6bf61729f6}
+
+\item 
+int \hyperlink{class_hash_table_ac93583320296c5f4873876403dcc670c}{get\+Tamanho} ()
+\item 
+int \hyperlink{class_hash_table_a201014e7ddafc6eac9afce5dcce32ed5}{get\+Qtd\+Objetos} ()
+\item 
+\hyperlink{class_hash_object}{Hash\+Object\+Ptr} $\ast$ \hyperlink{class_hash_table_a8ac77a7d72554f9695c654ab904ad98b}{get\+Tabela} ()
+\item 
+int \hyperlink{class_hash_table_a7e700a0cce1fdbc1b7a960e3cae4b5fd}{Hash} (string chave)
+\item 
+void \hyperlink{class_hash_table_aaa0d01393a2a520983a3e1c9cde7d772}{Add\+Item} (string chave, T item)
+\item 
+void \hyperlink{class_hash_table_ad68b1919c8c5253d9a65a4322839536a}{Add\+Item} (string chave, T $\ast$item)
+\item 
+void \hyperlink{class_hash_table_a6e60fb4f0dafb682760aa9d68f3e6a4c}{Remove\+Item} (string chave)
+\item 
+\hyperlink{class_linked_list}{Linked\+List}$<$ T $>$ \hyperlink{class_hash_table_a35806c4c18feafc59ce781a375ef87ff}{Buscar} (string chave)
+\item 
+void \hyperlink{class_hash_table_ad503bababb5b37994fa49206c05c8f48}{Expandir} ()
+\item 
+void \hyperlink{class_hash_table_ae66da715339d7e03c6554528e2da88bd}{Reduzir} ()
+\item 
+void \hyperlink{class_hash_table_a3a14c48fbd3548880c4caea070442d79}{Redimensionar} (int tamanho)
+\item 
+void \hyperlink{class_hash_table_a8af7e9205fdfd4c8f606844f4a0e04af}{Print\+Table} ()
+\item 
+\hyperlink{class_linked_list}{Linked\+List}$<$ string $>$ \hyperlink{class_hash_table_abdd027f0d88887cedcfb60aaf883a7db}{Serialize} ()
+\item 
+void \hyperlink{class_hash_table_ae0b7b2f3d90446e4f06e1206219a9c98}{Serializar\+No\+Arquivo} (string caminho\+Arquivo)
+\item 
+void \hyperlink{class_hash_table_a571ccd4c73d1dc73837b903569127e2f}{Deserializar\+Do\+Arquivo} (string caminho\+Arquivo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\\*
+class Hash\+Table$<$ T $>$}
+
+Classe que é a estrutura escolhida para manter constante as buscas. 
+
+\subsection{Member Function Documentation}
+\index{Hash\+Table@{Hash\+Table}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Add\+Item(string chave, T item)}{AddItem(string chave, T item)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Add\+Item (
+\begin{DoxyParamCaption}
+\item[{string}]{chave, }
+\item[{T}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_aaa0d01393a2a520983a3e1c9cde7d772}{}\label{class_hash_table_aaa0d01393a2a520983a3e1c9cde7d772}
+Método que adiciona uma palavra na tabela. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String que é a palavra e item de qualquer tipo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Não possui retorno. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Add\+Item(string chave, T $\ast$item)}{AddItem(string chave, T *item)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Add\+Item (
+\begin{DoxyParamCaption}
+\item[{string}]{chave, }
+\item[{T $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_ad68b1919c8c5253d9a65a4322839536a}{}\label{class_hash_table_ad68b1919c8c5253d9a65a4322839536a}
+Método que inseri a chave. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String que é a palavra e uma item que é uma lista. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um inteiro. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Buscar@{Buscar}}
+\index{Buscar@{Buscar}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Buscar(string chave)}{Buscar(string chave)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Linked\+List}$<$T$>$ {\bf Hash\+Table}$<$ T $>$\+::Buscar (
+\begin{DoxyParamCaption}
+\item[{string}]{chave}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_a35806c4c18feafc59ce781a375ef87ff}{}\label{class_hash_table_a35806c4c18feafc59ce781a375ef87ff}
+Método que busca por uma chave na lista. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String que é a palavra. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna endereço para uma lista. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Deserializar\+Do\+Arquivo@{Deserializar\+Do\+Arquivo}}
+\index{Deserializar\+Do\+Arquivo@{Deserializar\+Do\+Arquivo}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Deserializar\+Do\+Arquivo(string caminho\+Arquivo)}{DeserializarDoArquivo(string caminhoArquivo)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Deserializar\+Do\+Arquivo (
+\begin{DoxyParamCaption}
+\item[{string}]{caminho\+Arquivo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_a571ccd4c73d1dc73837b903569127e2f}{}\label{class_hash_table_a571ccd4c73d1dc73837b903569127e2f}
+Método que retira a papiline. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Recebe como parametro o caminho para o arquivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Não possui retorno. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Expandir@{Expandir}}
+\index{Expandir@{Expandir}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Expandir()}{Expandir()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Expandir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_ad503bababb5b37994fa49206c05c8f48}{}\label{class_hash_table_ad503bababb5b37994fa49206c05c8f48}
+Método responsável por expandir a tabela caso tenha necessidade. \index{Hash\+Table@{Hash\+Table}!get\+Qtd\+Objetos@{get\+Qtd\+Objetos}}
+\index{get\+Qtd\+Objetos@{get\+Qtd\+Objetos}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{get\+Qtd\+Objetos()}{getQtdObjetos()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Hash\+Table}$<$ T $>$\+::get\+Qtd\+Objetos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_a201014e7ddafc6eac9afce5dcce32ed5}{}\label{class_hash_table_a201014e7ddafc6eac9afce5dcce32ed5}
+Método que retorna a quantidade total de objetos. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um inteiro. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!get\+Tabela@{get\+Tabela}}
+\index{get\+Tabela@{get\+Tabela}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{get\+Tabela()}{getTabela()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Hash\+Object\+Ptr}$\ast$ {\bf Hash\+Table}$<$ T $>$\+::get\+Tabela (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_a8ac77a7d72554f9695c654ab904ad98b}{}\label{class_hash_table_a8ac77a7d72554f9695c654ab904ad98b}
+Método que retorna um ponteiro com o tamanho alocado para a tabela. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um ponteiro. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!get\+Tamanho@{get\+Tamanho}}
+\index{get\+Tamanho@{get\+Tamanho}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{get\+Tamanho()}{getTamanho()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Hash\+Table}$<$ T $>$\+::get\+Tamanho (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_ac93583320296c5f4873876403dcc670c}{}\label{class_hash_table_ac93583320296c5f4873876403dcc670c}
+Método que retorna o tamanho inicial da tabela. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um inteiro. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Hash@{Hash}}
+\index{Hash@{Hash}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Hash(string chave)}{Hash(string chave)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Hash\+Table}$<$ T $>$\+::Hash (
+\begin{DoxyParamCaption}
+\item[{string}]{chave}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_a7e700a0cce1fdbc1b7a960e3cae4b5fd}{}\label{class_hash_table_a7e700a0cce1fdbc1b7a960e3cae4b5fd}
+Método que retorna um inteiro calculado através da palavra. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String que é a palavra. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna um inteiro. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Print\+Table@{Print\+Table}}
+\index{Print\+Table@{Print\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Print\+Table()}{PrintTable()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Print\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_a8af7e9205fdfd4c8f606844f4a0e04af}{}\label{class_hash_table_a8af7e9205fdfd4c8f606844f4a0e04af}
+Imprime o que contêm na tabela. \index{Hash\+Table@{Hash\+Table}!Redimensionar@{Redimensionar}}
+\index{Redimensionar@{Redimensionar}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Redimensionar(int tamanho)}{Redimensionar(int tamanho)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Redimensionar (
+\begin{DoxyParamCaption}
+\item[{int}]{tamanho}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_a3a14c48fbd3548880c4caea070442d79}{}\label{class_hash_table_a3a14c48fbd3548880c4caea070442d79}
+Método que redimensiona a tabela conforme o tamanho passado. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Recebe um inteiro sendo o tamanho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Não possui retorno. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Reduzir@{Reduzir}}
+\index{Reduzir@{Reduzir}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Reduzir()}{Reduzir()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Reduzir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_ae66da715339d7e03c6554528e2da88bd}{}\label{class_hash_table_ae66da715339d7e03c6554528e2da88bd}
+Método responsável por reduzir a tabela caso tenha necessidade. \index{Hash\+Table@{Hash\+Table}!Remove\+Item@{Remove\+Item}}
+\index{Remove\+Item@{Remove\+Item}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Remove\+Item(string chave)}{RemoveItem(string chave)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Remove\+Item (
+\begin{DoxyParamCaption}
+\item[{string}]{chave}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_a6e60fb4f0dafb682760aa9d68f3e6a4c}{}\label{class_hash_table_a6e60fb4f0dafb682760aa9d68f3e6a4c}
+Método que remove uma chave da tabela. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & String que contém a palavra. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Não possui retorno. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Serializar\+No\+Arquivo@{Serializar\+No\+Arquivo}}
+\index{Serializar\+No\+Arquivo@{Serializar\+No\+Arquivo}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Serializar\+No\+Arquivo(string caminho\+Arquivo)}{SerializarNoArquivo(string caminhoArquivo)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Hash\+Table}$<$ T $>$\+::Serializar\+No\+Arquivo (
+\begin{DoxyParamCaption}
+\item[{string}]{caminho\+Arquivo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_ae0b7b2f3d90446e4f06e1206219a9c98}{}\label{class_hash_table_ae0b7b2f3d90446e4f06e1206219a9c98}
+Método que coloca uma papiline chave e dado. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Recebe como parametro o caminho do arquivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Não possui retorno. 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Serialize()}{Serialize()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Linked\+List}$<$string$>$ {\bf Hash\+Table}$<$ T $>$\+::Serialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_hash_table_abdd027f0d88887cedcfb60aaf883a7db}{}\label{class_hash_table_abdd027f0d88887cedcfb60aaf883a7db}
+Método que inseri numa lista duplamente encadeada a chave e dado. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Não possui parametro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna o endereço um lista. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dependencies/Hash\+Table.\+cpp\end{DoxyCompactItemize}

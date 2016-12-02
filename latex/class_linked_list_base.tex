@@ -1,0 +1,154 @@
+\hypertarget{class_linked_list_base}{}\section{Linked\+List\+Base$<$ T $>$ Class Template Reference}
+\label{class_linked_list_base}\index{Linked\+List\+Base$<$ T $>$@{Linked\+List\+Base$<$ T $>$}}
+
+
+Inheritance diagram for Linked\+List\+Base$<$ T $>$\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_linked_list_base_a7f4aee5b7dd3ed708ea4ec21a49c25e5}{Get\+Tamanho} ()
+\item 
+T $\ast$ \hyperlink{class_linked_list_base_ac96f2f82d6da57f6d279875bb14f5abe}{First\+Or\+Default} ()
+\item 
+T $\ast$ \hyperlink{class_linked_list_base_a494247e0b43636a3014dd0ca59cd222b}{Last\+Or\+Default} ()
+\item 
+T $\ast$ \hyperlink{class_linked_list_base_a45aabae4256ca1735c4cd804d1afe7d3}{Get\+Element\+At\+Index} (int index\+Buscado)
+\item 
+{\footnotesize template$<$typename Func $>$ }\\void \hyperlink{class_linked_list_base_a727ba3a0b69d1f14b602a9e987841daa}{For\+Each} (Func func)
+\item 
+void \hyperlink{class_linked_list_base_a734e3d7271d3d31b02961940a2809d1f}{Imprimir} ()
+\item 
+void \hyperlink{class_linked_list_base_af631161eb453d9076b6ac5ecd58dce7a}{Imprimir} (string($\ast$func)(T $\ast$))
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_node}{Node}$<$ T $>$ $\ast$ {\bfseries cabeca}\hypertarget{class_linked_list_base_a830dd40ace91854ac6547801098d4b49}{}\label{class_linked_list_base_a830dd40ace91854ac6547801098d4b49}
+
+\item 
+\hyperlink{class_node}{Node}$<$ T $>$ $\ast$ {\bfseries cauda}\hypertarget{class_linked_list_base_ae0663c6176274c28622d58fea4d9290a}{}\label{class_linked_list_base_ae0663c6176274c28622d58fea4d9290a}
+
+\item 
+int {\bfseries tamanho}\hypertarget{class_linked_list_base_a336a89c1dd243e36e6ba7c040b750caf}{}\label{class_linked_list_base_a336a89c1dd243e36e6ba7c040b750caf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\\*
+class Linked\+List\+Base$<$ T $>$}
+
+Classe da lista duplamente encadeada. 
+
+\subsection{Member Function Documentation}
+\index{Linked\+List\+Base@{Linked\+List\+Base}!First\+Or\+Default@{First\+Or\+Default}}
+\index{First\+Or\+Default@{First\+Or\+Default}!Linked\+List\+Base@{Linked\+List\+Base}}
+\subsubsection[{\texorpdfstring{First\+Or\+Default()}{FirstOrDefault()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf Linked\+List\+Base}$<$ T $>$\+::First\+Or\+Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_base_ac96f2f82d6da57f6d279875bb14f5abe}{}\label{class_linked_list_base_ac96f2f82d6da57f6d279875bb14f5abe}
+Método que pega o primeiro elemento da lista. 
+\begin{DoxyParams}{Parameters}
+{\em Não} & tem parâmetro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o primeiro elemento da lista, caso não exista elementos, retorna N\+U\+LL. 
+\end{DoxyReturn}
+\index{Linked\+List\+Base@{Linked\+List\+Base}!For\+Each@{For\+Each}}
+\index{For\+Each@{For\+Each}!Linked\+List\+Base@{Linked\+List\+Base}}
+\subsubsection[{\texorpdfstring{For\+Each(\+Func func)}{ForEach(Func func)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$typename Func $>$ void {\bf Linked\+List\+Base}$<$ T $>$\+::For\+Each (
+\begin{DoxyParamCaption}
+\item[{Func}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_base_a727ba3a0b69d1f14b602a9e987841daa}{}\label{class_linked_list_base_a727ba3a0b69d1f14b602a9e987841daa}
+Método que procura um \hyperlink{class_node}{Node} verdadeiro. 
+\begin{DoxyParams}{Parameters}
+{\em recebe} & um método de qualquer tipo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Não tem retorno. 
+\end{DoxyReturn}
+\index{Linked\+List\+Base@{Linked\+List\+Base}!Get\+Element\+At\+Index@{Get\+Element\+At\+Index}}
+\index{Get\+Element\+At\+Index@{Get\+Element\+At\+Index}!Linked\+List\+Base@{Linked\+List\+Base}}
+\subsubsection[{\texorpdfstring{Get\+Element\+At\+Index(int index\+Buscado)}{GetElementAtIndex(int indexBuscado)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf Linked\+List\+Base}$<$ T $>$\+::Get\+Element\+At\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index\+Buscado}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_base_a45aabae4256ca1735c4cd804d1afe7d3}{}\label{class_linked_list_base_a45aabae4256ca1735c4cd804d1afe7d3}
+Método que procura um elemento pelo índice e retorna o valor contido. 
+\begin{DoxyParams}{Parameters}
+{\em Índice} & passado para fazer a busca. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o elemento, caso não encontre retorna N\+U\+LL. 
+\end{DoxyReturn}
+\index{Linked\+List\+Base@{Linked\+List\+Base}!Get\+Tamanho@{Get\+Tamanho}}
+\index{Get\+Tamanho@{Get\+Tamanho}!Linked\+List\+Base@{Linked\+List\+Base}}
+\subsubsection[{\texorpdfstring{Get\+Tamanho()}{GetTamanho()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf Linked\+List\+Base}$<$ T $>$\+::Get\+Tamanho (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_base_a7f4aee5b7dd3ed708ea4ec21a49c25e5}{}\label{class_linked_list_base_a7f4aee5b7dd3ed708ea4ec21a49c25e5}
+Método que retorna tamanho, ou seja, quantidade de elementos inseridos. 
+\begin{DoxyParams}{Parameters}
+{\em Não} & possui parâmentro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna quantidade de elementos. 
+\end{DoxyReturn}
+\index{Linked\+List\+Base@{Linked\+List\+Base}!Imprimir@{Imprimir}}
+\index{Imprimir@{Imprimir}!Linked\+List\+Base@{Linked\+List\+Base}}
+\subsubsection[{\texorpdfstring{Imprimir()}{Imprimir()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Linked\+List\+Base}$<$ T $>$\+::Imprimir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_base_a734e3d7271d3d31b02961940a2809d1f}{}\label{class_linked_list_base_a734e3d7271d3d31b02961940a2809d1f}
+Método que imprime todos os elementos da lista. 
+\begin{DoxyParams}{Parameters}
+{\em Não} & tem. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Não tem retorno. 
+\end{DoxyReturn}
+\index{Linked\+List\+Base@{Linked\+List\+Base}!Imprimir@{Imprimir}}
+\index{Imprimir@{Imprimir}!Linked\+List\+Base@{Linked\+List\+Base}}
+\subsubsection[{\texorpdfstring{Imprimir(string($\ast$func)(\+T $\ast$))}{Imprimir(string(*func)(T *))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Linked\+List\+Base}$<$ T $>$\+::Imprimir (
+\begin{DoxyParamCaption}
+\item[{string($\ast$)(T $\ast$)}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_base_af631161eb453d9076b6ac5ecd58dce7a}{}\label{class_linked_list_base_af631161eb453d9076b6ac5ecd58dce7a}
+Método que imprime todos os elementos da lista. 
+\begin{DoxyParams}{Parameters}
+{\em Do} & tipo string um ponteiro para um método que recebe um \hyperlink{class_node}{Node}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Não tem retorno. 
+\end{DoxyReturn}
+\index{Linked\+List\+Base@{Linked\+List\+Base}!Last\+Or\+Default@{Last\+Or\+Default}}
+\index{Last\+Or\+Default@{Last\+Or\+Default}!Linked\+List\+Base@{Linked\+List\+Base}}
+\subsubsection[{\texorpdfstring{Last\+Or\+Default()}{LastOrDefault()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf Linked\+List\+Base}$<$ T $>$\+::Last\+Or\+Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_base_a494247e0b43636a3014dd0ca59cd222b}{}\label{class_linked_list_base_a494247e0b43636a3014dd0ca59cd222b}
+Método que pega o último elemento da lista 
+\begin{DoxyParams}{Parameters}
+{\em Não} & possui parâmetro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o último elemento, caso não exista elementos, retorna N\+U\+LL 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dependencies/\+Linked\+List/Linked\+List\+Base.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,155 @@
+\hypertarget{class_linked_list}{}\section{Linked\+List$<$ T $>$ Class Template Reference}
+\label{class_linked_list}\index{Linked\+List$<$ T $>$@{Linked\+List$<$ T $>$}}
+
+
+Inheritance diagram for Linked\+List$<$ T $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Linked\+List$<$ T $>$\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ \hyperlink{class_linked_list_a7672e27fa087b1f84de2f02c59d023be}{Buscar\+\_\+\+First} (T valor)
+\item 
+T $\ast$ \hyperlink{class_linked_list_a72dfe042b0983692bcba64fb478130b8}{Buscar\+\_\+\+First} (bool($\ast$func)(T $\ast$))
+\item 
+\hyperlink{class_linked_list}{Linked\+List}$<$ T $>$ \hyperlink{class_linked_list_a7cd61556956370c609c09415f3535663}{Buscar\+\_\+\+To\+List} (bool($\ast$func)(T $\ast$))
+\item 
+{\footnotesize template$<$typename Func $>$ }\\bool \hyperlink{class_linked_list_afdc8067e3c23217a0e74e8ac1a7637e5}{Any} (Func func)
+\item 
+void \hyperlink{class_linked_list_a07e81568782c14c4090de29b627891bd}{Ordenar} (bool($\ast$func)(T $\ast$, T $\ast$))
+\item 
+void \hyperlink{class_linked_list_ae001c1e96e64ad4e66453663f2f37c72}{Intercalar} (\hyperlink{class_node}{Node}$<$ T $>$ $\ast$item1, \hyperlink{class_node}{Node}$<$ T $>$ $\ast$item2)
+\item 
+void \hyperlink{class_linked_list_a0b0a614771578800ecc82f87c9c1b1b8}{Ordenar\+Quick} (bool($\ast$func)(T $\ast$, T $\ast$), void($\ast$print)(T $\ast$))
+\item 
+void {\bfseries Quick\+Sort} (\hyperlink{class_node}{Node}$<$ T $>$ $\ast$item1, \hyperlink{class_node}{Node}$<$ T $>$ $\ast$item2, bool($\ast$func)(T $\ast$, T $\ast$), void($\ast$print)(T $\ast$))\hypertarget{class_linked_list_a1a5854fef17fe7f13da6ad276a2ea58e}{}\label{class_linked_list_a1a5854fef17fe7f13da6ad276a2ea58e}
+
+\item 
+\hyperlink{class_node}{Node}$<$ T $>$ $\ast$ {\bfseries Particionar} (\hyperlink{class_node}{Node}$<$ T $>$ $\ast$item1, \hyperlink{class_node}{Node}$<$ T $>$ $\ast$item2, bool($\ast$func)(T $\ast$, T $\ast$), void($\ast$print)(T $\ast$))\hypertarget{class_linked_list_ac39ffab7f68d32127b539a5e96888a00}{}\label{class_linked_list_ac39ffab7f68d32127b539a5e96888a00}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\\*
+class Linked\+List$<$ T $>$}
+
+Classe que herda de \hyperlink{class_linked_list_removable}{Linked\+List\+Removable} os métodos que removem um \hyperlink{class_node}{Node} da lista. 
+
+\subsection{Member Function Documentation}
+\index{Linked\+List@{Linked\+List}!Any@{Any}}
+\index{Any@{Any}!Linked\+List@{Linked\+List}}
+\subsubsection[{\texorpdfstring{Any(\+Func func)}{Any(Func func)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ template$<$typename Func $>$ bool {\bf Linked\+List}$<$ T $>$\+::Any (
+\begin{DoxyParamCaption}
+\item[{Func}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_afdc8067e3c23217a0e74e8ac1a7637e5}{}\label{class_linked_list_afdc8067e3c23217a0e74e8ac1a7637e5}
+Método que retorna falso se um valor não estiver numa lista. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Func pode ser qualquer tipo que contenha uma lista. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Retorna verdadeiro enquando valor estiver na lista, caso contrario retorna falso. 
+\end{DoxyReturn}
+\index{Linked\+List@{Linked\+List}!Buscar\+\_\+\+First@{Buscar\+\_\+\+First}}
+\index{Buscar\+\_\+\+First@{Buscar\+\_\+\+First}!Linked\+List@{Linked\+List}}
+\subsubsection[{\texorpdfstring{Buscar\+\_\+\+First(\+T valor)}{Buscar_First(T valor)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf Linked\+List}$<$ T $>$\+::Buscar\+\_\+\+First (
+\begin{DoxyParamCaption}
+\item[{T}]{valor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_a7672e27fa087b1f84de2f02c59d023be}{}\label{class_linked_list_a7672e27fa087b1f84de2f02c59d023be}
+Método que busca um item na lista -\/ Busca apenas itens de tipos primitivos, EX\+: (int, char, double...). 
+\begin{DoxyParams}{Parameters}
+{\em valor} & -\/ Valor do item que está sendo buscado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O primeiro item cujo valor foi encontrado ou retorna N\+U\+LL caso o item não seja encontrado na lista. 
+\end{DoxyReturn}
+\index{Linked\+List@{Linked\+List}!Buscar\+\_\+\+First@{Buscar\+\_\+\+First}}
+\index{Buscar\+\_\+\+First@{Buscar\+\_\+\+First}!Linked\+List@{Linked\+List}}
+\subsubsection[{\texorpdfstring{Buscar\+\_\+\+First(bool($\ast$func)(\+T $\ast$))}{Buscar_First(bool(*func)(T *))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T$\ast$ {\bf Linked\+List}$<$ T $>$\+::Buscar\+\_\+\+First (
+\begin{DoxyParamCaption}
+\item[{bool($\ast$)(T $\ast$)}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_a72dfe042b0983692bcba64fb478130b8}{}\label{class_linked_list_a72dfe042b0983692bcba64fb478130b8}
+Método que busca um item na lista. EX\+: 
+\begin{DoxyParams}{Parameters}
+{\em func} & -\/ Função que define se o item é o que está sendo buscado, retorna um bool se o item foi encontrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O primeiro item cujo valor foi encontrado. Retorna N\+U\+LL caso o item não seja encontrado na lista. Exemplo de uso\+: Buscar(\mbox{[}\mbox{]}(int$\ast$ i) \{ return $\ast$i == 10; \}); 
+\end{DoxyReturn}
+\index{Linked\+List@{Linked\+List}!Buscar\+\_\+\+To\+List@{Buscar\+\_\+\+To\+List}}
+\index{Buscar\+\_\+\+To\+List@{Buscar\+\_\+\+To\+List}!Linked\+List@{Linked\+List}}
+\subsubsection[{\texorpdfstring{Buscar\+\_\+\+To\+List(bool($\ast$func)(\+T $\ast$))}{Buscar_ToList(bool(*func)(T *))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf Linked\+List}$<$T$>$ {\bf Linked\+List}$<$ T $>$\+::Buscar\+\_\+\+To\+List (
+\begin{DoxyParamCaption}
+\item[{bool($\ast$)(T $\ast$)}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_a7cd61556956370c609c09415f3535663}{}\label{class_linked_list_a7cd61556956370c609c09415f3535663}
+Método que busca um item na lista. EX\+: 
+\begin{DoxyParams}{Parameters}
+{\em func} & -\/ Função que define se o item é o que está sendo buscado, retorna um bool se o item foi encontrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O primeiro item cujo valor foi encontrado. Retorna N\+U\+LL caso o item não seja encontrado na lista. Exemplo de uso\+: Buscar(\mbox{[}\mbox{]}(int$\ast$ i) \{ return $\ast$i == 10; \}); 
+\end{DoxyReturn}
+\index{Linked\+List@{Linked\+List}!Intercalar@{Intercalar}}
+\index{Intercalar@{Intercalar}!Linked\+List@{Linked\+List}}
+\subsubsection[{\texorpdfstring{Intercalar(\+Node$<$ T $>$ $\ast$item1, Node$<$ T $>$ $\ast$item2)}{Intercalar(Node< T > *item1, Node< T > *item2)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Linked\+List}$<$ T $>$\+::Intercalar (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}$<$ T $>$ $\ast$}]{item1, }
+\item[{{\bf Node}$<$ T $>$ $\ast$}]{item2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_ae001c1e96e64ad4e66453663f2f37c72}{}\label{class_linked_list_ae001c1e96e64ad4e66453663f2f37c72}
+Método que intercala valores contido nos \hyperlink{class_node}{Node}. 
+\begin{DoxyParams}{Parameters}
+{\em item1} & e item2 do tipo \hyperlink{class_node}{Node}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Inverte valores e passa por referência, pois o método é void. 
+\end{DoxyReturn}
+\index{Linked\+List@{Linked\+List}!Ordenar@{Ordenar}}
+\index{Ordenar@{Ordenar}!Linked\+List@{Linked\+List}}
+\subsubsection[{\texorpdfstring{Ordenar(bool($\ast$func)(\+T $\ast$, T $\ast$))}{Ordenar(bool(*func)(T *, T *))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Linked\+List}$<$ T $>$\+::Ordenar (
+\begin{DoxyParamCaption}
+\item[{bool($\ast$)(T $\ast$, T $\ast$)}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_a07e81568782c14c4090de29b627891bd}{}\label{class_linked_list_a07e81568782c14c4090de29b627891bd}
+Método que ordena lista duplamente encadeada 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & Duas lista de qualquer tipo e um retorno boleano. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ Não possui retorno. 
+\end{DoxyReturn}
+\index{Linked\+List@{Linked\+List}!Ordenar\+Quick@{Ordenar\+Quick}}
+\index{Ordenar\+Quick@{Ordenar\+Quick}!Linked\+List@{Linked\+List}}
+\subsubsection[{\texorpdfstring{Ordenar\+Quick(bool($\ast$func)(\+T $\ast$, T $\ast$), void($\ast$print)(\+T $\ast$))}{OrdenarQuick(bool(*func)(T *, T *), void(*print)(T *))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf Linked\+List}$<$ T $>$\+::Ordenar\+Quick (
+\begin{DoxyParamCaption}
+\item[{bool($\ast$)(T $\ast$, T $\ast$)}]{func, }
+\item[{void($\ast$)(T $\ast$)}]{print}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_linked_list_a0b0a614771578800ecc82f87c9c1b1b8}{}\label{class_linked_list_a0b0a614771578800ecc82f87c9c1b1b8}
+Método que chama outro para Ordenar. 
+\begin{DoxyParams}{Parameters}
+{\em troca} & os \hyperlink{class_node}{Node}\textquotesingle{}s retornando um boleano, método que imprime a lista. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Os valores trocados pro referência, pois é void. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dependencies/Linked\+List.\+cpp\end{DoxyCompactItemize}

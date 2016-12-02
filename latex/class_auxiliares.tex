@@ -1,0 +1,75 @@
+\hypertarget{class_auxiliares}{}\section{Auxiliares Class Reference}
+\label{class_auxiliares}\index{Auxiliares@{Auxiliares}}
+
+
+{\ttfamily \#include $<$Auxiliares.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_linked_list}{Linked\+List}$<$ string $>$ \hyperlink{class_auxiliares_a579def9f1eda3390bfaca4f72408b954}{Split} (const char $\ast$delimitador, string texto)
+\item 
+static string \hyperlink{class_auxiliares_a160b4df20fb5a2c6604f9a406a87a20a}{Remover\+Caracteres\+Especiais} (string texto)
+\item 
+static string \hyperlink{class_auxiliares_a574d1557f17d2940e18871ca317cb7d1}{To\+Lower\+Case} (string texto)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe com métodos auxiliares. 
+
+\subsection{Member Function Documentation}
+\index{Auxiliares@{Auxiliares}!Remover\+Caracteres\+Especiais@{Remover\+Caracteres\+Especiais}}
+\index{Remover\+Caracteres\+Especiais@{Remover\+Caracteres\+Especiais}!Auxiliares@{Auxiliares}}
+\subsubsection[{\texorpdfstring{Remover\+Caracteres\+Especiais(string texto)}{RemoverCaracteresEspeciais(string texto)}}]{\setlength{\rightskip}{0pt plus 5cm}string Auxiliares\+::\+Remover\+Caracteres\+Especiais (
+\begin{DoxyParamCaption}
+\item[{string}]{texto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_auxiliares_a160b4df20fb5a2c6604f9a406a87a20a}{}\label{class_auxiliares_a160b4df20fb5a2c6604f9a406a87a20a}
+Método que Retorna uma string sem os \char`\"{}lixos\char`\"{} como\+: ,./\+\_\+ 
+\begin{DoxyParams}{Parameters}
+{\em Recebe} & um string que contêm o texto para ser limpo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o texto sem os lixos. 
+\end{DoxyReturn}
+\index{Auxiliares@{Auxiliares}!Split@{Split}}
+\index{Split@{Split}!Auxiliares@{Auxiliares}}
+\subsubsection[{\texorpdfstring{Split(const char $\ast$delimitador, string texto)}{Split(const char *delimitador, string texto)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Linked\+List}$<$ string $>$ Auxiliares\+::\+Split (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{delimitador, }
+\item[{string}]{texto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_auxiliares_a579def9f1eda3390bfaca4f72408b954}{}\label{class_auxiliares_a579def9f1eda3390bfaca4f72408b954}
+Realiza a separação de uma string de acordo com o delimitador especificado. 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & char -\/ delimitador. \\
+\hline
+{\em -\/} & string -\/ texto a ser separado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ \hyperlink{class_linked_list}{Linked\+List$<$string$>$} -\/ List com os valores separados. 
+\end{DoxyReturn}
+\index{Auxiliares@{Auxiliares}!To\+Lower\+Case@{To\+Lower\+Case}}
+\index{To\+Lower\+Case@{To\+Lower\+Case}!Auxiliares@{Auxiliares}}
+\subsubsection[{\texorpdfstring{To\+Lower\+Case(string texto)}{ToLowerCase(string texto)}}]{\setlength{\rightskip}{0pt plus 5cm}string Auxiliares\+::\+To\+Lower\+Case (
+\begin{DoxyParamCaption}
+\item[{string}]{texto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_auxiliares_a574d1557f17d2940e18871ca317cb7d1}{}\label{class_auxiliares_a574d1557f17d2940e18871ca317cb7d1}
+Transforma todas as letras do texto em minusculo 
+\begin{DoxyParams}{Parameters}
+{\em -\/} & string -\/ texto a ser tratado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ string -\/ Texto utilizado o lowercase. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dependencies/\+Headers/Auxiliares.\+h\item 
+Dependencies/Auxiliares.\+cpp\end{DoxyCompactItemize}
